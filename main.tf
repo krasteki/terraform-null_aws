@@ -18,6 +18,6 @@ provider "null" {
 
 resource "null_resource" "VM-01" {
   provisioner "local-exec" {
-    command = "aws --version"
+    command = "which aws"
   }
 }
